@@ -28,12 +28,6 @@ spec:
         envFrom:
         - configMapRef:
             name: moaraudio-model-config
-        env:
-        - name: MODEL_ENDPOINT_BEARER
-          valueFrom:
-            secretKeyRef:
-              name: model-key
-              key: apikey
         ports:
         - containerPort: 8501
         securityContext:
