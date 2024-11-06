@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: moaraudio-database-config
+data:
+  VECTORDB_HOST: "moaraudio-database"
+  VECTORDB_PORT: ""
